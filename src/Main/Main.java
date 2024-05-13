@@ -2,28 +2,20 @@ package Main;
 
 public class Main {
     public static void main(String[] args) {
-
         int begin = 100;
-
-        int x = 100;
-
-        int y = 1100;
-
+        int amount = 1100;
         int bonus = 0;
+        int result = 0;
 
-        if (y >= 1000) {
-            bonus = y / 100;
+        if (amount >= 1000) {
+            bonus = amount / 100;
         }
-
-        System.out.println("сумма пополнения " + y + ", бонус " + bonus);
-
-        bonus = 0;
-        if (x >= 1000) {
-            bonus = x / 100;
+        result = begin + amount + bonus;
+        if (bonus > 0) {
+            System.out.println("сумма пополнения " + amount + ", бонус " + bonus + ", итоговая сумма " + result);
+        } else {
+            System.out.println("сумма пополнения " + amount + ", итоговая сумма " + result);
         }
-        System.out.println("сумма пополнения " + x + ", бонус " + bonus);
     }
-
-
 
 }
